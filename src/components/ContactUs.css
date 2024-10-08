@@ -1,0 +1,111 @@
+/* Contact Us Page Fullscreen Styles */
+.contactus-page {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Full height */
+    padding: 20px;
+    background-color: #ecf0f1; /* Light background color */
+    margin: 0; /* Remove default margin */
+}
+
+.contactus-page h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 32px; /* Increase font size */
+}
+
+.contactus-page p {
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px; /* Space below the paragraph */
+    font-size: 18px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Limit max width for larger screens */
+    margin: auto; /* Center form on the page */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+/* Hover Effect on Input */
+input:hover, textarea:hover {
+    border-color: #2c3e50; /* Darker border on hover */
+}
+
+/* Focus Effect on Input */
+input:focus, textarea:focus {
+    border-color: #2c3e50; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(44, 62, 80, 0.3); /* Add subtle shadow */
+    outline: none; /* Remove default outline */
+}
+
+/* Textarea Specific Styling */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 120px; /* Set minimum height for the textarea */
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover */
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Hover and Active State for Button */
+button:hover {
+    background-color: #34495e; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Pressed effect on button */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .contactus-page h1 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    .contactus-page p {
+        font-size: 16px; /* Adjust paragraph size for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Slightly smaller button text on mobile */
+    }
+}

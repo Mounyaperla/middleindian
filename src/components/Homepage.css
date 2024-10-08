@@ -1,0 +1,66 @@
+/* Image Grid Section */
+.image-grid {
+    display: flex; /* Use flexbox to align images side by side */
+    flex-wrap: wrap; /* Allow images to wrap onto the next line if needed */
+    gap: 20px; /* Space between image cards */
+    margin-top: 20px;
+}
+
+/* Image Card Styles */
+.image-card {
+    flex: 0 1 calc(33.33% - 20px); /* Each card takes one-third of the row, minus the gap */
+    min-width: 250px; /* Set a minimum width for each card */
+    max-width: calc(33.33% - 20px); /* Max width for three cards in a row */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.image-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.image-card img {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Rounded corners for top */
+}
+
+/* Button Styles */
+.button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .image-card {
+        flex: 0 1 calc(33.33% - 20px); /* Keep three images per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-card {
+        flex: 0 1 calc(50% - 20px); /* Two images per row on small screens */
+    }
+}
+
+/* Ensure all rows maintain the 3 per row structure */
+@media (max-width: 768px) and (min-width: 481px) {
+    .image-card {
+        flex: 0 1 calc(33.33% - 20px); /* Ensure three images per row */
+    }
+}

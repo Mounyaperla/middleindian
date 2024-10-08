@@ -1,0 +1,115 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the signup page with background image */
+.signup-page {
+    display: flex;
+    justify-content: space-between; /* Keep image on the left, form on the right */
+    align-items: flex-end; /* Align content towards the bottom */
+    height: 100vh; /* Take full height of the viewport */
+    background-image: url('C:/Users/LENOVO/Downloads/images.jpeg'); /* Replace with the actual URL of the background image */
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-color: #e0f7fa; /* Fallback color if image doesn't load */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Styling for the signup content, including form and image */
+.image-container {
+    flex: 1; /* Allow the image container to grow */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.house-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Set a max width */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Form container */
+.form-container {
+    flex: 0 0 400px; /* Fix the form container width */
+    padding: 40px;
+    background-color: #b2dfdb; /* Background for the form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    backdrop-filter: blur(5px); /* Optional: Add blur effect for readability over background */
+    margin-left: auto; /* Push form to the right side */
+    margin-bottom: 0; /* Push form to the bottom */
+}
+
+/* Form Title */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px; /* Smaller form title */
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    margin-bottom: 15px;
+}
+
+/* Input Labels */
+.input-container label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Fields */
+.input-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Ensure input takes full width */
+}
+
+/* Button Container for Sign Up and Back buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 15px; /* Space above the button container */
+    width: 100%; /* Ensure buttons take full width */
+}
+
+/* Button Styles */
+button {
+    padding: 10px; /* Decrease button padding */
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    flex: 1; /* Ensure buttons grow equally */
+    margin-right: 10px; /* Space between buttons */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Back Button Specific Styles */
+.back-button {
+    background-color: #f44336; /* Red background for back button */
+}
+
+.back-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
